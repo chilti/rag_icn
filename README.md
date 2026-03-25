@@ -1,10 +1,10 @@
 # RAG_ICN: Agente RAG del Laboratorio de Dinámica no Lineal
 
-El **RAG_ICN** es un sistema conversacional avanzado basado en agentes diseñado para explorar y consultar la producción científica del Laboratorio de Dinámica no Lineal (www.dynamics.unam.edu). Utiliza técnicas de Generación Aumentada por Recuperación (RAG) para proporcionar respuestas precisas y fundamentadas a partir de una base de datos vectorial en **ChromaDB**, donde se ha indexado la producción científica del laboratorio.
+El **RAG_ICN** es un sistema conversacional avanzado basado en agentes diseñado para explorar y consultar la producción científica de la UNAM. Fue desarrollado en el Laboratorio de Dinámica no Lineal (www.dynamics.unam.edu). Utiliza técnicas de Generación Aumentada por Recuperación (RAG) para proporcionar respuestas precisas y fundamentadas a partir de una base de datos vectorial en **ChromaDB**, donde se ha indexado la producción científica del laboratorio.
 
-El sistema se puede acceder en las siguientes URLs:
+Se han montado dos prototipos en las siguientes URLs:
 
-*   **RAG del Laboratorio de Dinámica**: [https://dinamica1.fciencias.unam.mx/rag/](https://dinamica1.fciencias.unam.mx/rag/)
+*   **RAG del Instituto de Ciencias Nucleares**: [https://dinamica1.fciencias.unam.mx/rag/](https://dinamica1.fciencias.unam.mx/rag/)
 *   **Chatbot de la Facultad de Ciencias**: [https://dinamica1.fciencias.unam.mx/chatbot/](https://dinamica1.fciencias.unam.mx/chatbot/)
 
 
