@@ -1,10 +1,10 @@
-# RAG_ICN: Agente RAG del Instituto de Ciencias Nucleares (UNAM)
+# RAG_ICN: Agente RAG del Laboratorio de Dinámica no Lineal
 
-El **RAG_ICN** es un sistema conversacional avanzado basado en agentes diseñado para explorar y consultar la producción científica del Instituto de Ciencias Nucleares (ICN) de la UNAM. Utiliza técnicas de Generación Aumentada por Recuperación (RAG) para proporcionar respuestas precisas y fundamentadas a partir de una base de datos vectorial en **ChromaDB**, donde se ha indexado la producción científica del instituto.
+El **RAG_ICN** es un sistema conversacional avanzado basado en agentes diseñado para explorar y consultar la producción científica de la UNA. Fue desarrollado en el Laboratorio de Dinámica no Lineal (www.dynamics.unam.edu). Utiliza técnicas de Generación Aumentada por Recuperación (RAG) para proporcionar respuestas precisas y fundamentadas a partir de una base de datos vectorial en **ChromaDB**, donde se ha indexado la producción científica del laboratorio.
 
 El sistema se puede acceder en las siguientes URLs:
 
-*   **RAG del ICN**: [https://dinamica1.fciencias.unam.mx/rag/](https://dinamica1.fciencias.unam.mx/rag/)
+*   **RAG del Instituto de Ciencias Nucleares**: [https://dinamica1.fciencias.unam.mx/rag/](https://dinamica1.fciencias.unam.mx/rag/)
 *   **Chatbot de la Facultad de Ciencias**: [https://dinamica1.fciencias.unam.mx/chatbot/](https://dinamica1.fciencias.unam.mx/chatbot/)
 
 
@@ -48,7 +48,7 @@ El sistema opera bajo un flujo de **Generación Aumentada por Recuperación (RAG
 
 1.  **Análisis de Intención**: El LLM local (vía LM Studio) analiza la pregunta del usuario para determinar qué herramientas necesita.
 2.  **Recuperación (Retrieval)**:
-    *   **Prioridad 1**: Busca en la base de datos vectorial de **títulos, resúmenes, autores y keywords** de artículos del ICN.
+    *   **Prioridad 1**: Busca en la base de datos vectorial de **títulos, resúmenes, autores y keywords** de artículos del Laboratorio de Dinámica.
     *   **Prioridad 2**: Consulta fragmentos de **texto completo** de ~1200 artículos científicos vectorizados.
     *   **Herramientas Externas**: Si es necesario, consulta metadatos en **OpenAlex**, realiza búsquedas en **DuckDuckGo** o extrae contexto de **Wikipedia**.
 3.  **Aumentación y Síntesis**: El agente integra toda la evidencia recuperada y la traduce (si es necesario) para redactar una respuesta final en español.
@@ -58,9 +58,9 @@ El sistema opera bajo un flujo de **Generación Aumentada por Recuperación (RAG
 ```mermaid
 flowchart TD
     U[Usuario en Streamlit] -->|Pregunta| S[Interfaz Streamlit]
-    S --> A[Agente RAG ICN]
-    A --> H1["ChromaDB\n(ICN títulos+resúmenes+autores+keywords)"]
-    A --> H2["ChromaDB\n(ICN texto completo ~1200 artículos)"]
+    S --> A[Agente RAG Laboratorio]
+    A --> H1["ChromaDB\n(Laboratorio títulos+resúmenes+autores+keywords)"]
+    A --> H2["ChromaDB\n(Laboratorio texto completo ~1200 artículos)"]
     A --> H3["OpenAlex API\n(DOI, Autores, Trabajos)"]
     A --> H4["DuckDuckGo\nWeb Search"]
     A --> H5[Wikipedia]
@@ -80,7 +80,7 @@ flowchart TD
 sequenceDiagram
     actor U as Usuario
     participant S as Streamlit
-    participant A as Agente ICN
+    participant A as Agente Laboratorio
     participant L as LLM
     participant C1 as ChromaDB (títulos+resúmenes)
     participant C2 as ChromaDB (texto completo)
