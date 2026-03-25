@@ -1,6 +1,14 @@
 # RAG_ICN: Agente RAG del Instituto de Ciencias Nucleares (UNAM)
 
-El **RAG_ICN** es un sistema conversacional avanzado basado en agentes diseñado para explorar y consultar la producción científica del Instituto de Ciencias Nucleares (ICN) de la UNAM. Utiliza técnicas de Generación Aumentada por Recuperación (RAG) para proporcionar respuestas precisas y fundamentadas a partir de una base de datos vectorial en **ChromaDB**, donde se ha indexado la producción científica del instituto, integrando además herramientas externas como OpenAlex, DuckDuckGo y Wikipedia para enriquecer el contexto y la actualidad de la información.
+El **RAG_ICN** es un sistema conversacional avanzado basado en agentes diseñado para explorar y consultar la producción científica del Instituto de Ciencias Nucleares (ICN) de la UNAM. Utiliza técnicas de Generación Aumentada por Recuperación (RAG) para proporcionar respuestas precisas y fundamentadas a partir de una base de datos vectorial en **ChromaDB**, donde se ha indexado la producción científica del instituto.
+
+El sistema se puede acceder en las siguientes URLs:
+
+*   **RAG del ICN**: [https://dinamica1.fciencias.unam.mx/rag/](https://dinamica1.fciencias.unam.mx/rag/)
+*   **Chatbot de la Facultad de Ciencias**: [https://dinamica1.fciencias.unam.mx/chatbot/](https://dinamica1.fciencias.unam.mx/chatbot/)
+
+
+El agente integra además herramientas externas como OpenAlex, DuckDuckGo y Wikipedia para enriquecer el contexto y la actualidad de la información.
 
 ## 🚀 Instalación y Requisitos
 
