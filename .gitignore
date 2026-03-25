@@ -1,0 +1,27 @@
+# Standard Python ignores
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Environment variables
+.env
+
+# Streamlit ignores
+.streamlit/
+static/
+
+# IDE specific
+.vscode/
+.idea/
+
+# Database files
+*.sqlite3
+**/chroma_db/
+**/vector_db/
+# Since the code uses persist_directory="../", it might be outside the current folder, 
+# but ignoring it here anyway if it ends up inside at some point.
